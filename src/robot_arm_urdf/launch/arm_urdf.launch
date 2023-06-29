@@ -8,7 +8,8 @@
         
         <param name="robot_description" textfile="$(find robot_arm_urdf)/urdf/robot_arm_urdf.urdf" />
         
-        <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+        <include file="$(find robot_arm_urdf)/worlds/world.launch" />
+        
         <node name="tf_footprint_base" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 base_link base_footprint 40" /> 
         
         <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-x $(arg arg_x) -y $(arg arg_y) -z $(arg arg_z) -param robot_description -urdf -model robot_arm_urdf" />
