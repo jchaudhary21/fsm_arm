@@ -1,0 +1,14 @@
+material fsm/fsmLogo
+{
+  technique
+  {
+    pass
+    {
+
+      texture_unit
+      {
+        texture fsmLogo.png
+      }
+    }
+  }
+}

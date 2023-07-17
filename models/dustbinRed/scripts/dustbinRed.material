@@ -1,0 +1,14 @@
+material dustbin/Red
+{
+  technique
+  {
+    pass
+    {
+
+      texture_unit
+      {
+        texture dustbinRed.jpg
+      }
+    }
+  }
+}

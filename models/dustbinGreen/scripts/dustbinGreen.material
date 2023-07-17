@@ -1,0 +1,14 @@
+material dustbin/Green
+{
+  technique
+  {
+    pass
+    {
+
+      texture_unit
+      {
+        texture dustbinGreen.jpg
+      }
+    }
+  }
+}
