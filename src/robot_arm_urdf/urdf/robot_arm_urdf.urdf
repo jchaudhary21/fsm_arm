@@ -21,9 +21,7 @@
       <geometry>
         <mesh filename="package://robot_arm_urdf/meshes/base_link.STL" />
       </geometry>
-      <material name="">
-        <color rgba="0.79216 0.81961 0.93333 1" />
-      </material>
+      <material name="blue"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -32,6 +30,20 @@
       </geometry>
     </collision>
   </link>
+
+<!-- dark shade -->
+  <gazebo reference="base_link">  
+  <visual>  
+    <material>  
+<ambient>0.19607843137254902 0.24313725490196078 0.29411764705882354 1</ambient>
+<diffuse>0.19607843137254902 0.24313725490196078 0.29411764705882354 1</diffuse>
+<specular>0.8 0.8 0.8 1</specular>
+<emissive>0 0 0 0</emissive>
+</material> 
+   <!-- </material> -->  
+  </visual>  
+</gazebo>
+  
 
   <link name="link_1">
     <inertial>
@@ -44,9 +56,7 @@
       <geometry>
         <mesh filename="package://robot_arm_urdf/meshes/link_1.STL" />
       </geometry>
-      <material name="">
-        <color rgba="1 1 1 1" />
-      </material>
+      <material name="blue"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -55,6 +65,23 @@
       </geometry>
     </collision>
   </link>
+  
+  <!-- dark shade -->
+    <gazebo reference="link_1">  
+  <visual>  
+    <material> 
+  
+	<ambient>0.30980392156862746 0.3764705882352941 0.4588235294117647 1</ambient>
+<diffuse>0.30980392156862746 0.3764705882352941 0.4588235294117647 1</diffuse>
+<specular>0.30980392156862746 0.3764705882352941 0.4588235294117647 1</specular>
+<emissive>0 0 0 0</emissive>
+ 
+
+       
+    </material>  
+  </visual>  
+</gazebo>
+  
 
   <joint name="joint_1" type="revolute">
     <origin xyz="0 0 0.2" rpy="1.5708 0 1.5708" />
@@ -75,9 +102,7 @@
       <geometry>
         <mesh filename="package://robot_arm_urdf/meshes/link_2.STL" />
       </geometry>
-      <material name="">
-        <color rgba="0.79216 0.81961 0.93333 1" />
-      </material>
+    
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -86,6 +111,18 @@
       </geometry>
     </collision>
   </link>
+  
+      <gazebo reference="link_2">  
+      <visual>  
+       <material> 
+
+<ambient>0.45098039215686275 0.5450980392156862 0.6392156862745098 1</ambient>
+<diffuse>0.45098039215686275 0.5450980392156862 0.6392156862745098 1</diffuse>
+<specular>0.45098039215686275 0.5450980392156862 0.6392156862745098 1</specular>
+<emissive>0 0 0 0</emissive>
+     </material>  
+   </visual>  
+</gazebo>
 
   <joint name="joint_2" type="revolute">
     <origin xyz="0 0.205 0" rpy="0 0 0" />
@@ -106,9 +143,7 @@
       <geometry>
         <mesh filename="package://robot_arm_urdf/meshes/link_3.STL" />
       </geometry>
-      <material name="">
-        <color rgba="0.79216 0.81961 0.93333 1" />
-      </material>
+      <material name="blue"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -117,6 +152,19 @@
       </geometry>
     </collision>
   </link>
+      <gazebo reference="link_3">  
+  <visual>  
+    <material>  
+<ambient>0.30980392156862746 0.3764705882352941 0.4588235294117647 1</ambient>
+<diffuse>0.30980392156862746 0.3764705882352941 0.4588235294117647 1</diffuse>
+<specular>0.30980392156862746 0.3764705882352941 0.4588235294117647 1</specular>
+<emissive>0 0 0 0</emissive>
+
+
+
+    </material>  
+  </visual>  
+</gazebo>
 
   <joint name="joint_3" type="revolute">
     <origin xyz="0 0.4 0" rpy="0 0 0" />
@@ -137,9 +185,7 @@
       <geometry>
         <mesh filename="package://robot_arm_urdf/meshes/link_4.STL" />
       </geometry>
-      <material name="">
-        <color rgba="0.79216 0.81961 0.93333 1" />
-      </material>
+      <material name="blue"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -148,6 +194,18 @@
       </geometry>
     </collision>
   </link>
+      <gazebo reference="link_4">  
+  <visual>  
+    <material>  
+<ambient>0.45098039215686275 0.5450980392156862 0.6392156862745098 1</ambient>
+<diffuse>0.45098039215686275 0.5450980392156862 0.6392156862745098 1</diffuse>
+<specular>0.45098039215686275 0.5450980392156862 0.6392156862745098 1</specular>
+<emissive>0 0 0 0</emissive>
+
+
+    </material>  
+  </visual>  
+</gazebo>
 
   <joint name="joint_4" type="revolute">
     <origin xyz="-0.35 0 0" rpy="0 0 1.5708" />
@@ -171,9 +229,7 @@
       <geometry>
         <mesh filename="package://robot_arm_urdf/meshes/gripper_base_link.STL"  scale = "0.001 0.001 0.001"/>
       </geometry>
-      <material name="">
-        <color rgba="0.79216 0.81961 0.93333 1" />
-      </material>
+      <material name="blue"/>
     </visual>
     <collision>
       <geometry>
@@ -189,12 +245,27 @@
     </inertial>
   </link>
   <gazebo reference="gripper_base_link">
+ 
     <implicitSpringDamper>1</implicitSpringDamper>
     <mu1>10</mu1>
     <mu2>10</mu2>
     <kp>1.0</kp>
     <kd>1.0</kd>
   </gazebo>
+      <gazebo reference="gripper_base_link">  
+  <visual>  
+    <material>  
+<ambient>0.30980392156862746 0.3764705882352941 0.4588235294117647 1</ambient>
+<diffuse>0.30980392156862746 0.3764705882352941 0.4588235294117647 1</diffuse>
+<specular>0.30980392156862746 0.3764705882352941 0.4588235294117647 1</specular>
+<emissive>0 0 0 0</emissive>
+
+
+
+    </material>  
+  </visual>  
+</gazebo>
+
 
   <joint name="gripper_finger1_joint" type="revolute">
     <parent link="gripper_base_link"/>
@@ -234,6 +305,7 @@
     </inertial>
   </link>
   <gazebo reference="gripper_finger1_knuckle_link">
+ 
     <implicitSpringDamper>1</implicitSpringDamper>
     <mu1>10</mu1>
     <mu2>10</mu2>
@@ -261,6 +333,7 @@
     </inertial>
   </link>
   <gazebo reference="gripper_finger2_knuckle_link">
+ 
     <implicitSpringDamper>1</implicitSpringDamper>
     <mu1>10</mu1>
     <mu2>10</mu2>
@@ -306,12 +379,16 @@
     </inertial>
   </link>
   <gazebo reference="gripper_finger1_finger_link">
+ 
     <implicitSpringDamper>1</implicitSpringDamper>
     <mu1>10</mu1>
     <mu2>10</mu2>
     <kp>1.0</kp>
     <kd>1.0</kd>
   </gazebo>
+ 
+
+
 
   <link name="gripper_finger2_finger_link">
     <visual>
@@ -333,12 +410,14 @@
     </inertial>
   </link>
   <gazebo reference="gripper_finger2_finger_link">
+ 
     <implicitSpringDamper>1</implicitSpringDamper>
     <mu1>10</mu1>
     <mu2>10</mu2>
     <kp>1.0</kp>
     <kd>1.0</kd>
   </gazebo>
+
 
   <joint name="gripper_finger1_inner_knuckle_joint" type="continuous">
     <parent link="gripper_base_link"/>
@@ -378,6 +457,7 @@
     </inertial>
   </link>
   <gazebo reference="gripper_finger1_inner_knuckle_link">
+ 
     <implicitSpringDamper>1</implicitSpringDamper>
     <mu1>10</mu1>
     <mu2>10</mu2>
@@ -405,6 +485,7 @@
     </inertial>
   </link>
   <gazebo reference="gripper_finger2_inner_knuckle_link">
+ 
     <implicitSpringDamper>1</implicitSpringDamper>
     <mu1>10</mu1>
     <mu2>10</mu2>
@@ -449,12 +530,25 @@
     </inertial>
   </link>
   <gazebo reference="gripper_finger1_finger_tip_link">
+ 
     <implicitSpringDamper>1</implicitSpringDamper>
     <mu1>10</mu1>
     <mu2>10</mu2>
     <kp>1.0</kp>
     <kd>1.0</kd>  
 </gazebo>
+  <gazebo reference="gripper_finger1_finger_tip_link">  
+  <visual>  
+    <material>  
+<ambient>1 1 1 1</ambient>
+<diffuse> 1 1 1 1 1</diffuse>
+<specular>1 1 1 1</specular>
+<emissive>0 0 0 0</emissive>
+    </material>  
+  </visual>  
+</gazebo>
+
+
 
   <link name="gripper_finger2_finger_tip_link">
     <visual>
@@ -476,12 +570,26 @@
     </inertial>
   </link>
   <gazebo reference="gripper_finger2_finger_tip_link">
+ 
     <implicitSpringDamper>1</implicitSpringDamper>
     <mu1>10</mu1>
     <mu2>10</mu2>
     <kp>1.0</kp>
     <kd>1.0</kd>
   </gazebo>
+    <gazebo reference="gripper_finger2_finger_tip_link">  
+  <visual>  
+    <material>  
+<ambient>1 1 1 1</ambient>
+<diffuse> 1 1 1 1 1</diffuse>
+<specular>1 1 1 1</specular>
+<emissive>0 0 0 0</emissive>
+    </material>  
+  </visual>  
+</gazebo>
+
+
+  
 
   <transmission name="link_1_trans">
     <type>transmission_interface/SimpleTransmission</type>
