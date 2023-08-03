@@ -170,7 +170,7 @@
       </model>
       <model name='unit_box_clone'>
         <pose>0.276924 0.473874 0.265132 0 0 -2.27368</pose>
-        <scale>0.7269 1 1</scale>
+        <scale>0.7269 0.85 0.85</scale>
         <link name='link_1'>
           <pose>0.276924 0.473874 0.265132 0 0 -2.27368</pose>
           <velocity>0 0 0 0 -0 0</velocity>
