@@ -1,6 +1,0 @@
-base Link - x/c
-link 1    - w/s
-link 2    - e/d 
-link 3    - r/f 
-link 4    - g/h 
- 
